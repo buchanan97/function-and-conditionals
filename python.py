@@ -186,31 +186,3 @@ def card_selection():
 
 card_selection()
 
-# example 7
-# My previous code works fine but in order to shorten it and to show my enhanced skills for conditionals and fucntions. I simplified like this.
-# Temperature
-mild = 70 
-
-hot = 80
-
-chilly = 50
-
-cold = 33
-
-freezing = -20
-try: 
-    user_input = int(input("Please type in your outside temperature: "))
-#conditional logic holds the input compares to the variable value set beforehand. 
-    if user_input <= freezing:
-        print("It's freezing! Bundle up!")
-    elif user_input <= cold:
-        print("It's cold, wear a coat.")
-    elif user_input <= chilly:
-        print("It's chilly, wear a light jacket.")
-    elif user_input <= mild:
-        print("It's mild, enjoy the weather!")
-    else:
-        print("It's hot, stay hydrated!")
-#except clause will hold the value error if the value is not a integer. 
-except ValueError:
-    print("Invalid input. Please enter an integer.")
